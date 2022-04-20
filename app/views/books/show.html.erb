@@ -1,0 +1,25 @@
+
+
+
+ <p id="notice">
+   <%= notice %>
+ </p>
+
+
+
+   <p>
+    <strong>Title:</strong>
+     <%= @book.title %>　<!-- インスタンスの値を表示、グローバル変数を表示できるようにする、検索結果を表示する記述 -->
+   </p>
+
+   <p>
+    <strong>Body:</strong>
+     <%= @book.body %>
+   </p>
+
+
+<br/>
+<tr><%= link_to "Edit", edit_book_path(@book.id) %></tr>
+｜
+<tr><%= link_to "Back", books_path %></tr>
+
